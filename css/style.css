@@ -1,0 +1,36 @@
+body{
+   width: 60%; 
+   margin: auto;
+}
+.header{
+   border-bottom: 0.5px solid gray;
+   margin-bottom: 30px;
+}
+.btn-primary{
+   width: 100%;
+   margin: 14px 0;
+}
+.form-group{
+   margin: 14px 0;
+}
+#result{
+   margin: 15px 0;
+   text-align: center;
+}
+.error {
+   background-color: #FBE9E7;
+   border: 1px solid #F4511E;
+   padding: 10px;
+   margin-bottom: 20px;
+   text-align: center;
+   color: #F4511E;
+}
+.error p {
+   margin:0;
+}
+#loading img {
+   margin: auto;
+}
+#loading{
+   text-align: center;
+}

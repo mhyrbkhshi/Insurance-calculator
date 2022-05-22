@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+   <title>Insurance calculator</title>
+   <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div class="header">
+    <h1>Insurance calculator</h1>
+  </div>
+  <form action="" id="request-quote">
+    <div class="form-group">
+      <label class="full-width" for="make">Cars model</label>
+      <select class="form-control" id="make">
+        <option value="0">-- Choose --</option>
+        <option value="1">Peraid</option>
+        <option value="2">Pars</option>
+        <option value="3">Optima</option>
+      </select>
+    </div>
+    <div class="form-group">
+      <label class="full-width" for="year">Construction year</label>
+      <select class="form-control" id="year">
+        <option value="0">-- Choose --</option>
+      </select>
+    </div>
+    <div class="form-check">
+      <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1" value="basic" checked>
+      <label class="form-check-label" for="gridRadios1">
+        Simple insurance
+      </label>
+    </div>
+    <div class="form-check">
+      <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios2" value="complete">
+      <label class="form-check-label" for="gridRadios2">
+        Complete insurance
+      </label>
+    </div>
+    <div id="loading"></div>
+    <button type="submit" class="btn btn-primary">Submit</button>
+  </form>
+  <div id="result">
+  </div>
+   <script src="js/display.js"></script>
+   <script src="js/validate.js"></script>
+   <script src="js/calculate.js"></script>
+   <script src="js/app.js"></script>
+</body>
+</html>
